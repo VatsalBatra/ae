@@ -1,0 +1,218 @@
+{% load staticfiles %}
+
+<html>
+<head>
+<title>DECORATIVE ITEMS </title>
+<!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="static/questions/css/materialize.css"  media="screen,projection"/>
+   
+<link rel="stylesheet" type="text/css" href="{% static 'questions/mystyle.css' %}" />
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="static/questions/js/materialize.js"></script>
+<style>
+#products_container{
+  max-width: 1100px;
+  margin: auto;
+}
+</style>
+</head>
+<body>
+<div id ="header">
+<h4>Contact Us : 9953071448</h4>
+</div>
+<div id="yo" >
+  <h2 class="center-align top_heading">APARNA ENTERPRISES</h2>
+</div>
+        
+
+<ul id="dropdown1" class="dropdown-content">
+<li><a href={% url 'new' %}>New Arrival</a></li>
+  <li class="divider"></li>
+ <li><a href={% url 'popper' %}>Poppers</a></li>
+  <li class="divider"></li>
+<li><a href={% url 'balloon' %}>Balloon</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'cap' %}>Caps</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'knife_caketag' %}>Knife & Cake Tags</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'prop_decoration' %}>Props & Decoration</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'crown' %}>Crowns</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'candle' %}>Candle</a></li>
+  <li class="divider"></li>
+</ul>
+<ul id="dropdown2" class="dropdown-content">
+<li><a href={% url 'new' %}>New Arrival</a></li>
+  <li class="divider"></li>
+ <li><a href={% url 'popper' %}>Poppers</a></li>
+  <li class="divider"></li>
+<li><a href={% url 'balloon' %}>Balloon</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'cap' %}>Caps</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'knife_caketag' %}>Knife & Cake Tags</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'prop_decoration' %}>Props & Decoration</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'crown' %}>Crowns</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'candle' %}>Candle</a></li>
+  <li class="divider"></li>
+</ul>
+<nav>
+  <div class="nav-wrapper">
+  <a href="#!" class="brand-logo"><img id="mybrand" src="{% static  "questions/aparna.jpeg" %}" alt="My image"/></a>
+   
+      <ul class="right hide-on-med-and-down" > 
+   
+    
+      <li><a href="{% url 'firstpage' %}">Home</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="questions/contact">Contact Us</a></li>
+       <li><a href="questions/about">About Us</a></li>
+    </ul>
+     <a href="#!" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+         <ul class="side-nav" id="mobile-demo">
+       
+         <li><a href="{% url 'firstpage' %}">Home</a></li>
+         <li><a href="questions/contact">Contact</a></li>
+       <li><a href="questions/about">About Us</a></li>      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+  
+      
+    </ul>
+  </div>
+</nav>
+        
+
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="{% static  "questions/main1.jpg" %}" alt="My image"/><!-- random image -->
+        <div class="caption center-align">
+          <h3>Call and place the order</h3>
+          <h5 class="light grey-text text-lighten-3">Customer satisfaction is our primary motto.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="{% static  "questions/main2.jpg" %}" alt="My image"/> <!-- random image -->
+        <div class="caption left-align">
+          <h3>One day onsite delivery</h3>
+          <h5 class="light grey-text text-lighten-3">Party products at whole sale rates</h5>
+        </div> <img src="{% static  "questions/main1.jpg" %}" alt="My image"/>
+      </li>
+      <li>
+         <img src="{% static  "questions/main4.jpg" %}" alt="My image"/> <!-- random image -->
+        <div class="caption right-align">
+          <h3>All birthday and party products are availible</h3>
+          <h5 class="light grey-text text-lighten-3">special items for diwali,holi christmas</h5>
+        </div>
+      </li>
+      <li>
+         <img src="{% static  "questions/main1.jpg" %}" alt="My image"/> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Call and place the order</h3>
+          <h5 class="light grey-text text-lighten-3">Customer satisfaction is our primary motto.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id = "products_container">
+  <div class="row">
+      <div class="col s4"><a href={% url 'popper' %}><img class="card-panel hoverable responsive-img image" src="{% static  "questions/Poppers.jpg" %}" alt="My image"/></a></div>
+      <div class="col s4"><a href={% url 'candle' %}><img class="card-panel hoverable responsive-img" src="{% static  "questions/Candle.jpg" %}" alt="My image"/></a></div>
+      <div class="col s4"><a href={% url 'balloon' %}><img class="card-panel hoverable responsive-img" src="{% static  "questions/Balloons.jpg" %}" alt="My image"/></a></div>
+
+   </div>
+   <div class="row">
+     <div class="col s4"><a href={% url 'cap' %}><img class="card-panel hoverable responsive-img" src="{% static  "questions/Caps.jpg" %}" alt="My image"/></a></div>
+     <div class="col s4"><a href={% url 'prop_decoration' %}><img class="card-panel hoverable responsive-img" src="{% static  "questions/Props.jpg" %}" alt="My image"/></a></div>
+     <div class="col s4"><a href={% url 'knife_caketag' %}><img class="card-panel hoverable responsive-img" src="{% static  "questions/Knife.jpg" %}" alt="My image"/></a></div>
+
+   </div>
+    <div class="row">
+    <div class="col s4"><a href={% url 'crown' %}><img class="card-panel hoverable responsive-img" src="{% static  "questions/abt-1.jpg" %}" alt="My image"/></a></div>
+    </div>
+    </div>
+ <section id = "connector">
+<div class="row">
+
+      <div class="col s4 lowerbox">
+    
+      <div class="fixed-action-btn vertical" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><img class ="ima" src="{% static "questions/images/sm-facebook-icon.png" %}"alt="My image"/></a></li>
+      <li><a class="btn-floating yellow darken-1">  <i class=" material-icons">email</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons"><i class="material-icons"><i class="material-icons">settings_phone</i></i></i></a></li>
+      <li><a class="btn-floating blue"><img class ="ima" src="{% static "questions/images/sm-twitter-icon.png" %}" alt="My image"/></a></li>
+    
+    </ul>
+  </div>
+       
+
+      <div class="col s4"><h5>Information</h5>
+     <ul>
+  <li><a href="{% url 'firstpage' %}">Home</a></li>
+<li><a href="{% url 'about' %}">Contact Us</a></li>
+       <li><a href="{% url 'about' %}">About Us</a></li>
+</ul></div>
+      <div  class="col s4 "><h5>Products</h5>
+      <ul id="shorts">
+<li><a href={% url 'new' %}>New Arrival</a></li>
+ <li><a href={% url 'popper' %}>Poppers</a></li>
+ <li><a href={% url 'balloon' %}>Balloon</a></li>
+<li><a href={% url 'cap' %}>Caps</a></li>
+ <li><a href={% url 'knife_caketag' %}>Knife & Cake Tags</a></li>
+<li><a href={% url 'prop_decoration' %}>Props & Decoration</a></li>
+<li><a href={% url 'crown' %}>Crowns</a></li>
+<li><a href={% url 'candle' %}>Candle</a></li>
+</ul></div>
+      <div class="col s4"><h5>Store Information</h5>
+      <ul>
+      <li>+919953-071-448</li>
+      <li>aparnaenterprises2016@gmail.com</li>
+
+      </ul>
+
+    <h6>© 2016 APARANA ENTERPRISES. All Rights Reserved </h6>
+    <H5><B>DEVELOPERS CONTACT INFO:9650783868
+      </B></H5>
+       
+      </div>
+   </div>
+
+   
+</section>
+
+ <script >
+  $(".button-collapse").sideNav();
+  $('.collapsible').collapsible();
+
+  
+ </script>
+ <script>
+ 	 $(document).ready(function(){
+      $('.slider').slider({full_width:false});
+    });
+
+        
+ </script>
+ <script >
+    $(".button-collapse").sideNav();
+ </script>
+</body>
+</html>

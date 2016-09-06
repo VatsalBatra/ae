@@ -1,0 +1,82 @@
+
+body {
+    background-color: WHITE;
+    font-family: Roboto-Bold;
+}
+
+img#mybrand {
+    height:68px;
+    width: inherit;
+}
+a:hover{
+    color:20669C;
+    text-decoration: underline;
+}
+
+#empty{
+	background-color: lightblue;
+}
+.brand-logo{
+	    padding-left: 20px;
+    width: 77px;
+    height: 59px;
+}
+nav .nav-wrapper {
+    position: relative;
+    height: 100%;
+       background-color: 9ed6ff;
+}
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+#header {
+       background-color: 9ed6ff;
+    text-align: right;
+    color: 20669C;
+}
+.center-align {
+    color: 20669C;
+    font-family: cursive;
+    text-shadow: 3px 2px 12px #101;
+}
+#connector {
+    BACKGROUND-COLOR: F2F2F2;
+    color: black;
+}
+.card-panel{
+	padding:0px;
+}
+.hoverable:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 30px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img {
+   
+}
+.top-heading {
+    font-style: italic;
+    font-family: cursive;
+
+}
+#yo{
+	border-radius: 20px
+}
+.slider .indicators .indicator-item.active {
+  background-color: lightblue;
+}
+a{
+    color: black;s
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.col.s4.lowerbox {
+    width: 100%;
+}
+
+#text{
+  color:20669C;
+}
+ a {
+    color: black;
+}

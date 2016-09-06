@@ -1,0 +1,246 @@
+
+<style type="text/css">
+li a{
+  color:black;
+}
+body {
+    background-color: WHITE;
+    font-family: Roboto-Bold;
+}
+.image:hover { transform: scale(1.1); }
+
+#empty{
+  background-color: lightblue;
+}
+h5.ln1 {
+    padding-bottom: 16px;
+}
+.brand-logo{
+      padding-left: 20px;
+    width: 77px;
+    height: 59px;
+}
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+.card-panel{
+  padding:0px;
+}
+.hoverable:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 30px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img {
+    padding-top: 6px;
+    padding-Right: 5px;
+}
+.top-heading {
+    font-style: italic;
+    font-family: cursive;
+
+}
+#yo{
+  border-radius: 20px
+}
+#header{
+    background
+    text-align: right;
+    color: 20669C;
+}
+.center-align {
+    color: 20669C;
+    font-family: cursive;
+    text-shadow: 3px 2px 12px #101;
+}
+#connector {
+    BACKGROUND-COLOR: F2F2F2;
+    color: black;
+}
+#wrapper{
+	max-width: 900px;
+	margin:auto;
+}
+#contact-image{
+	width:100%;
+	height: 70%;
+}
+</style>
+{% extends 'questions/base.html' %}
+{% load staticfiles %}
+<style type="text/css">
+body {
+    background-color: WHITE;
+    font-family: Roboto-Bold;
+}
+</style>
+
+{% block content %} 
+<div id ="header">
+	<h4>Contact Us: 9953071448</h4>
+</div>
+<div id="yo" >
+  <h2 class="center-align top_heading">  APARNA ENTERPRISES</h2>
+</div>
+        
+
+<ul id="dropdown1" class="dropdown-content">
+<li><a href={% url 'new' %}>New Arrival</a></li>
+  <li class="divider"></li>
+ <li><a href={% url 'popper' %}>Poppers</a></li>
+  <li class="divider"></li>
+<li><a href={% url 'balloon' %}>Balloon</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'cap' %}>Caps</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'knife_caketag' %}>Knife & Cake Tags</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'prop_decoration' %}>Props & Decoration</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'crown' %}>Crowns</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'candle' %}>Candle</a></li>
+  <li class="divider"></li>
+</ul>
+<ul id="dropdown2" class="dropdown-content">
+<li><a href={% url 'new' %}>New Arrival</a></li>
+  <li class="divider"></li>
+ <li><a href={% url 'popper' %}>Poppers</a></li>
+  <li class="divider"></li>
+<li><a href={% url 'balloon' %}>Balloon</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'cap' %}>Caps</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'knife_caketag' %}>Knife & Cake Tags</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'prop_decoration' %}>Props & Decoration</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'crown' %}>Crowns</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'candle' %}>Candle</a></li>
+  <li class="divider"></li>
+</ul>
+<nav>
+  <div class="nav-wrapper">
+  <a href="#!" class="brand-logo"></a>
+   
+      <ul class="right hide-on-med-and-down" > 
+   
+    
+      <li><a href="{% url 'firstpage' %}">Home</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="{% url 'contact' %}">Contact Us</a></li>
+       <li><a href="{% url 'about' %}">About Us</a></li>
+    </ul>
+     <a href="#!" data-activates="mobile-demo" class="button-collapse"><i id = "menubutton" class="material-icons">menu</i></a>
+         <ul class="side-nav" id="mobile-demo">
+       
+         <li><a href="{% url 'firstpage' %}">Home</a></li>
+         <li><a href="{% url 'contact' %}">Contact Us</a></li>
+       <li><a href="{% url 'about' %}">About Us</a></li>      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+  
+      
+    </ul>
+  </div>
+</nav>
+<section>
+<div class="row">
+	 
+	 
+	 <img id = "contact-image" src="{% static "questions/contact.jpg" %}">
+
+</div>
+</section>
+<div id = "contact-container">
+<section id ="wrapper">
+	<div class = "row">
+    <p><h3>Aparna Enterprises</h3></p>
+		<div class ="col s6">
+		
+			<p><h5>Address: D-5,A Vijay Nagar Single Storey 
+     
+Delhi 110009</h5></p>
+ <p><h5 >Phone: +919953-071-448</h5></p>
+		</div>
+		<div class ="col s6">
+			
+			<p><h5 class ="ln1">Email: aparnaenterprises2016@gmail.com<h5></p>
+      <p id ="ln2"><h5>Website: aparnaenterprises.com<h5></p>
+		</div>
+	</div>
+</section>
+</div>
+<section id = "connector">
+<div class="row">
+
+      <div class="col s4 lowerbox">
+    
+      <div class="fixed-action-btn vertical" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><img class ="ima" src="{% static "questions/images/sm-facebook-icon.png" %}"alt="My image"/></a></li>
+      <li><a class="btn-floating yellow darken-1">  <i class=" material-icons">email</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons"><i class="material-icons"><i class="material-icons">settings_phone</i></i></i></a></li>
+      <li><a class="btn-floating blue"><img class ="ima" src="{% static "questions/images/sm-twitter-icon.png" %}" alt="My image" /></a></li>
+    
+    </ul>
+  </div>
+       
+
+      <div class="col s4"><h5>Information</h5>
+      <ul>
+  <li><a href="{% url 'firstpage' %}">Home</a></li>
+<li><a href="{% url 'about' %}">Contact Us</a></li>
+       <li><a href="{% url 'about' %}">About Us</a></li>
+</ul></div>
+      <div  class="col s4 "><h5>Products</h5>
+      <ul id="shorts">
+<li><a href={% url 'new' %}>New Arrival</a></li>
+ <li><a href={% url 'popper' %}>Poppers</a></li>
+ <li><a href={% url 'balloon' %}>Balloon</a></li>
+<li><a href={% url 'cap' %}>Caps</a></li>
+ <li><a href={% url 'knife_caketag' %}>Knife & Cake Tags</a></li>
+<li><a href={% url 'prop_decoration' %}>Props & Decoration</a></li>
+<li><a href={% url 'crown' %}>Crowns</a></li>
+<li><a href={% url 'candle' %}>Candle</a></li>
+</ul></div>
+      <div class="col s4"><h5>Store Information</h5>
+      <ul>
+		<li>+919953-071-448</li>
+		<li>aparnaenterprises2016@gmail.com</li>
+
+      </ul>
+
+    <h6> © 2016 APARANA ENTERPRISES. All Rights Reserved </h6>
+    <h5><b>DEVELOPERS CONTACT INFO:9650783868
+      </b></h6>
+       
+      </div>
+   </div>
+
+   
+</section>
+
+{% endblock %}
+<script >
+  $(".button-collapse").sideNav();
+  $('.collapsible').collapsible();
+
+  
+ </script>
+ <script>
+   $(document).ready(function(){
+      $('.slider').slider({full_width:false});
+    });
+
+        
+ </script>
+ <script >
+    $(".button-collapse").sideNav();
+ </script>
+            
+
