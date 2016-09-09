@@ -8,3 +8,4 @@ requests==2.10.0
 virtualenv==15.0.3
 whitenoise==3.2.1
 gunicorn==19.6.0
+psycopg2==2.5.4
