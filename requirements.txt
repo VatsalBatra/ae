@@ -7,3 +7,4 @@ PyMySQL==0.7.5
 requests==2.10.0
 virtualenv==15.0.3
 whitenoise==3.2.1
+gunicorn==19.6.0
