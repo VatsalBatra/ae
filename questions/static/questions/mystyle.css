@@ -1,4 +1,7 @@
-
+*{
+    padding: 0;
+    margin: 0;
+}
 body {
     background-color: WHITE;
     font-family: Roboto-Bold;
@@ -54,11 +57,7 @@ h1 {
 img {
    
 }
-.top-heading {
-    font-style: italic;
-    font-family: cursive;
 
-}
 #yo{
 	border-radius: 20px
 }

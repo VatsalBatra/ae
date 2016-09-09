@@ -35,11 +35,6 @@ img {
     padding-top: 6px;
     padding-Right: 5px;
 }
-.top-heading {
-    font-style: italic;
-    font-family: cursive;
-
-}
 #yo{
   border-radius: 20px
 }
@@ -50,7 +45,7 @@ img {
 }
 .center-align {
     color: 20669C;
-    font-family: cursive;
+ 
     text-shadow: 3px 2px 12px #101;
 }
 #connector {
@@ -102,24 +97,7 @@ body {
 <li><a href={% url 'candle' %}>Candle</a></li>
   <li class="divider"></li>
 </ul>
-<ul id="dropdown2" class="dropdown-content">
-<li><a href={% url 'new' %}>New Arrival</a></li>
-  <li class="divider"></li>
- <li><a href={% url 'popper' %}>Poppers</a></li>
-  <li class="divider"></li>
-<li><a href={% url 'balloon' %}>Balloon</a></li>
- <li class="divider"></li>
-<li><a href={% url 'cap' %}>Caps</a></li>
- <li class="divider"></li>
-<li><a href={% url 'knife_caketag' %}>Knife & Cake Tags</a></li>
- <li class="divider"></li>
-<li><a href={% url 'prop_decoration' %}>Props & Decoration</a></li>
- <li class="divider"></li>
-<li><a href={% url 'crown' %}>Crowns</a></li>
- <li class="divider"></li>
-<li><a href={% url 'candle' %}>Candle</a></li>
-  <li class="divider"></li>
-</ul>
+
 <nav>
   <div class="nav-wrapper">
   <a href="#!" class="brand-logo"></a>
@@ -136,10 +114,29 @@ body {
      <a href="#!" data-activates="mobile-demo" class="button-collapse"><i id = "menubutton" class="material-icons">menu</i></a>
          <ul class="side-nav" id="mobile-demo">
        
-         <li><a href="{% url 'firstpage' %}">Home</a></li>
-         <li><a href="{% url 'contact' %}">Contact Us</a></li>
-       <li><a href="{% url 'about' %}">About Us</a></li>      <!-- Dropdown Trigger -->
-      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+         
+           <li><a href="{% url 'firstpage' %}">Home</a></li>
+          <li class="divider"></li>
+         <li><a href={% url 'contact' %}>Contact Us</a></li>
+          <li class="divider"></li>
+       <li><a href={% url 'about' %}>About Us</a></li>
+        <li class="divider"></li>   <!-- Dropdown Trigger -->
+      <li><a href={% url 'new' %}>New Arrival</a></li>
+  <li class="divider"></li>
+ <li><a href={% url 'popper' %}>Poppers</a></li>
+  <li class="divider"></li>
+<li><a href={% url 'balloon' %}>Balloon</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'cap' %}>Caps</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'knife_caketag' %}>Knife & Cake Tags</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'prop_decoration' %}>Props & Decoration</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'crown' %}>Crowns</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'candle' %}>Candle</a></li>
+  <li class="divider"></li>
   
       
     </ul>
@@ -191,7 +188,7 @@ Delhi 110009</h5></p>
   </div>
        
 
-      <div class="col s4"><h5>Information</h5>
+      <div class="col s4"><h5>Info</h5>
       <ul>
   <li><a href="{% url 'firstpage' %}">Home</a></li>
 <li><a href="{% url 'about' %}">Contact Us</a></li>
@@ -210,7 +207,7 @@ Delhi 110009</h5></p>
 </ul></div>
       <div class="col s4"><h5>Store Information</h5>
       <ul>
-		<li>+919953-071-448</li>
+		<li>9953071448</li>
 		<li>aparnaenterprises2016@gmail.com</li>
 
       </ul>

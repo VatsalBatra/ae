@@ -51,24 +51,7 @@
 <li><a href={% url 'candle' %}>Candle</a></li>
   <li class="divider"></li>
 </ul>
-<ul id="dropdown2" class="dropdown-content">
-<li><a href={% url 'new' %}>New Arrival</a></li>
-  <li class="divider"></li>
- <li><a href={% url 'popper' %}>Poppers</a></li>
-  <li class="divider"></li>
-<li><a href={% url 'balloon' %}>Balloon</a></li>
- <li class="divider"></li>
-<li><a href={% url 'cap' %}>Caps</a></li>
- <li class="divider"></li>
-<li><a href={% url 'knife_caketag' %}>Knife & Cake Tags</a></li>
- <li class="divider"></li>
-<li><a href={% url 'prop_decoration' %}>Props & Decoration</a></li>
- <li class="divider"></li>
-<li><a href={% url 'crown' %}>Crowns</a></li>
- <li class="divider"></li>
-<li><a href={% url 'candle' %}>Candle</a></li>
-  <li class="divider"></li>
-</ul>
+
 <nav>
   <div class="nav-wrapper">
   <a href="#!" class="brand-logo"><img id="mybrand" src="{% static  "questions/aparna.jpeg" %}" alt="My image"/></a>
@@ -85,11 +68,29 @@
      <a href="#!" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
          <ul class="side-nav" id="mobile-demo">
        
-         <li><a href="{% url 'firstpage' %}">Home</a></li>
-         <li><a href="questions/contact">Contact</a></li>
-       <li><a href="questions/about">About Us</a></li>      <!-- Dropdown Trigger -->
-      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-  
+         
+           <li><a href="{% url 'firstpage' %}">Home</a></li>
+          <li class="divider"></li>
+         <li><a href={% url 'contact' %}>Contact Us</a></li>
+          <li class="divider"></li>
+       <li><a href={% url 'about' %}>About Us</a></li>
+        <li class="divider"></li>   <!-- Dropdown Trigger -->
+      <li><a href={% url 'new' %}>New Arrival</a></li>
+  <li class="divider"></li>
+ <li><a href={% url 'popper' %}>Poppers</a></li>
+  <li class="divider"></li>
+<li><a href={% url 'balloon' %}>Balloon</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'cap' %}>Caps</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'knife_caketag' %}>Knife & Cake Tags</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'prop_decoration' %}>Props & Decoration</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'crown' %}>Crowns</a></li>
+ <li class="divider"></li>
+<li><a href={% url 'candle' %}>Candle</a></li>
+  <li class="divider"></li>  
       
     </ul>
   </div>
@@ -101,29 +102,24 @@
       <li>
         <img src="{% static  "questions/main1.jpg" %}" alt="My image"/><!-- random image -->
         <div class="caption center-align">
-          <h3>Call and place the order</h3>
-          <h5 class="light grey-text text-lighten-3">Customer satisfaction is our primary motto.</h5>
+          
         </div>
       </li>
       <li>
         <img src="{% static  "questions/main2.jpg" %}" alt="My image"/> <!-- random image -->
         <div class="caption left-align">
-          <h3>One day onsite delivery</h3>
-          <h5 class="light grey-text text-lighten-3">Party products at whole sale rates</h5>
+         
         </div> <img src="{% static  "questions/main1.jpg" %}" alt="My image"/>
       </li>
       <li>
          <img src="{% static  "questions/main4.jpg" %}" alt="My image"/> <!-- random image -->
         <div class="caption right-align">
-          <h3>All birthday and party products are availible</h3>
-          <h5 class="light grey-text text-lighten-3">special items for diwali,holi christmas</h5>
+          
         </div>
       </li>
       <li>
          <img src="{% static  "questions/main1.jpg" %}" alt="My image"/> <!-- random image -->
         <div class="caption center-align">
-          <h3>Call and place the order</h3>
-          <h5 class="light grey-text text-lighten-3">Customer satisfaction is our primary motto.</h5>
         </div>
       </li>
     </ul>
@@ -163,8 +159,8 @@
     </ul>
   </div>
        
-
-      <div class="col s4"><h5>Information</h5>
+  <div class="col s4 lowerbox">
+      <div class="col s4"><h5>Info</h5>
      <ul>
   <li><a href="{% url 'firstpage' %}">Home</a></li>
 <li><a href="{% url 'about' %}">Contact Us</a></li>
@@ -182,11 +178,9 @@
 <li><a href={% url 'candle' %}>Candle</a></li>
 </ul></div>
       <div class="col s4"><h5>Store Information</h5>
-      <ul>
-      <li>+919953-071-448</li>
-      <li>aparnaenterprises2016@gmail.com</li>
-
-      </ul>
+      <p>9953071448</p>
+     
+      
 
     <h6>© 2016 APARANA ENTERPRISES. All Rights Reserved </h6>
     <p>DEVELOPERS CONTACT INFO:9650783868
