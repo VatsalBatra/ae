@@ -13,7 +13,7 @@ from .models import Crown
 from .models import Cap
 from .models import New_Arrival
 
-
+a=[];
 
 # Create your views here.
 @csrf_exempt
@@ -61,7 +61,7 @@ def all_Crown(request):
     return render(request, 'questions/index.html', context);
 @csrf_exempt
 def all_New(request):
-    context = {'q_list' : New_Arrival.objects.all() }
+    context = {'q_list' :New_Arrival.objects.all() }
     return render(request, 'questions/index.html', context);
 
 
