@@ -7,7 +7,7 @@ from .models import Knife_Caketag
 from .models import Prop_Decoration
 from .models import Crown
 from .models import Cap
-from .models import New_Arrival
+
 
 
 
@@ -33,8 +33,5 @@ class ProductsAdmin(admin.ModelAdmin):
 class ProductsAdmin(admin.ModelAdmin):
     list_display = ['title']
 @admin.register(Cap)    
-class ProductsAdmin(admin.ModelAdmin):
-    list_display = ['title']
-@admin.register(New_Arrival)    
 class ProductsAdmin(admin.ModelAdmin):
     list_display = ['title']
